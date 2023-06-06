@@ -12,6 +12,7 @@ source:
   patches:
     - mpl31.patch
     - np124.patch
+    - mpl37.patch
 
 build:
   noarch: python

@@ -1,0 +1,14 @@
+diff --git a/modest_image/modest_image.py b/modest_image/modest_image.py
+index 548d86b..357e666 100644
+--- a/modest_image/modest_image.py
++++ b/modest_image/modest_image.py
+@@ -242,8 +242,7 @@ def imshow(axes, X, cmap=None, norm=None, aspect=None,
+     # to tightly fit the image, regardless of dataLim.
+     im.set_extent(im.get_extent())
+ 
+-    axes.images.append(im)
+-    im._remove_method = lambda h: axes.images.remove(h)
++    axes.add_image(im)
+ 
+     return im
+ 
